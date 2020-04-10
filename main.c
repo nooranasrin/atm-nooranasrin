@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include "atm.h"
 
+void print_notes(notes);
+
 void print_notes(notes notes) {
   money denominations[] = DENOMINATIONS;
 
