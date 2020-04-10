@@ -18,4 +18,13 @@
    2590 0x11012000
   31999 0xf3412014
 */
-unsigned int get_money(unsigned short int);
+
+#define DENOMINATIONS {2000, 500, 100, 50, 20, 10, 5, 1}
+#define LIMIT 31999
+#define DENOMINATION_LENGTH 8
+#define REPEAT_8_TIMES for (int index = 0; index < DENOMINATION_LENGTH; index++)
+
+typedef unsigned int notes;
+typedef unsigned short int money;
+
+notes get_money(money);
