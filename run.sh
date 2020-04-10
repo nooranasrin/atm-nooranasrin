@@ -1,5 +1,7 @@
+rm -rf ./bin
 rm -rf ./*.o
 gcc -c *.c
-gcc -o $1 ./*.o
-./$1
+mkdir bin
+gcc -o ./bin/$1 ./*.o
+./bin/$1
 rm -rf ./*.o  
